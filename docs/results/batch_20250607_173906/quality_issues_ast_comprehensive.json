@@ -1,0 +1,305 @@
+{
+  "file_path": "/Users/dhruv/code/ecoguard-demo/sample-code/simple/quality_issues.py",
+  "analysis_time": "2025-06-07T21:39:08.637014+00:00",
+  "summary": {
+    "total_issues": 7,
+    "critical": 0,
+    "error": 0,
+    "warning": 2,
+    "info": 5,
+    "green_score": 100.0,
+    "security_score": 100.0
+  },
+  "issues": [
+    {
+      "rule_id": "unused_variable",
+      "category": "quality",
+      "severity": "warning",
+      "message": "Variable 'unused_var' is defined but never used",
+      "file_path": "/Users/dhruv/code/ecoguard-demo/sample-code/simple/quality_issues.py",
+      "line": 43,
+      "column": 4,
+      "end_line": 43,
+      "end_column": 14,
+      "description": null,
+      "code_snippet": null,
+      "suggested_fix": {
+        "description": "Remove unused variable 'unused_var' or prefix with underscore if intentional",
+        "replacement_code": "# Remove line or rename to _unused_var",
+        "can_auto_fix": false,
+        "confidence": 0.0,
+        "instructions": null
+      },
+      "impact": {
+        "performance": -0.1,
+        "security_risk": 0.0,
+        "carbon_impact": 0.0,
+        "maintainability": -0.5,
+        "cost_impact": 0.0
+      },
+      "rule_name": "Unused Variable",
+      "rule_description": "Variable is defined but never used",
+      "references": [],
+      "tags": [],
+      "ai_generated": false,
+      "ai_confidence": null,
+      "created_at": "2025-06-07T21:39:08.634983+00:00"
+    },
+    {
+      "rule_id": "unused_variable",
+      "category": "quality",
+      "severity": "warning",
+      "message": "Variable 'another_unused' is defined but never used",
+      "file_path": "/Users/dhruv/code/ecoguard-demo/sample-code/simple/quality_issues.py",
+      "line": 44,
+      "column": 4,
+      "end_line": 44,
+      "end_column": 18,
+      "description": null,
+      "code_snippet": null,
+      "suggested_fix": {
+        "description": "Remove unused variable 'another_unused' or prefix with underscore if intentional",
+        "replacement_code": "# Remove line or rename to _another_unused",
+        "can_auto_fix": false,
+        "confidence": 0.0,
+        "instructions": null
+      },
+      "impact": {
+        "performance": -0.1,
+        "security_risk": 0.0,
+        "carbon_impact": 0.0,
+        "maintainability": -0.5,
+        "cost_impact": 0.0
+      },
+      "rule_name": "Unused Variable",
+      "rule_description": "Variable is defined but never used",
+      "references": [],
+      "tags": [],
+      "ai_generated": false,
+      "ai_confidence": null,
+      "created_at": "2025-06-07T21:39:08.635172+00:00"
+    },
+    {
+      "rule_id": "unused_import",
+      "category": "quality",
+      "severity": "info",
+      "message": "Import 'os' is not used",
+      "file_path": "/Users/dhruv/code/ecoguard-demo/sample-code/simple/quality_issues.py",
+      "line": 6,
+      "column": 0,
+      "end_line": 6,
+      "end_column": 9,
+      "description": null,
+      "code_snippet": null,
+      "suggested_fix": {
+        "description": "Remove unused import 'os'",
+        "replacement_code": "# Remove import line",
+        "can_auto_fix": false,
+        "confidence": 0.0,
+        "instructions": null
+      },
+      "impact": {
+        "performance": -0.1,
+        "security_risk": 0.0,
+        "carbon_impact": 0.0,
+        "maintainability": -0.2,
+        "cost_impact": 0.0
+      },
+      "rule_name": "Unused Import",
+      "rule_description": "Import statement is not used in the module",
+      "references": [],
+      "tags": [],
+      "ai_generated": false,
+      "ai_confidence": null,
+      "created_at": "2025-06-07T21:39:08.635345+00:00"
+    },
+    {
+      "rule_id": "unused_import",
+      "category": "quality",
+      "severity": "info",
+      "message": "Import 'sys' is not used",
+      "file_path": "/Users/dhruv/code/ecoguard-demo/sample-code/simple/quality_issues.py",
+      "line": 7,
+      "column": 0,
+      "end_line": 7,
+      "end_column": 10,
+      "description": null,
+      "code_snippet": null,
+      "suggested_fix": {
+        "description": "Remove unused import 'sys'",
+        "replacement_code": "# Remove import line",
+        "can_auto_fix": false,
+        "confidence": 0.0,
+        "instructions": null
+      },
+      "impact": {
+        "performance": -0.1,
+        "security_risk": 0.0,
+        "carbon_impact": 0.0,
+        "maintainability": -0.2,
+        "cost_impact": 0.0
+      },
+      "rule_name": "Unused Import",
+      "rule_description": "Import statement is not used in the module",
+      "references": [],
+      "tags": [],
+      "ai_generated": false,
+      "ai_confidence": null,
+      "created_at": "2025-06-07T21:39:08.635349+00:00"
+    },
+    {
+      "rule_id": "unused_import",
+      "category": "quality",
+      "severity": "info",
+      "message": "Import 'json' is not used",
+      "file_path": "/Users/dhruv/code/ecoguard-demo/sample-code/simple/quality_issues.py",
+      "line": 8,
+      "column": 0,
+      "end_line": 8,
+      "end_column": 11,
+      "description": null,
+      "code_snippet": null,
+      "suggested_fix": {
+        "description": "Remove unused import 'json'",
+        "replacement_code": "# Remove import line",
+        "can_auto_fix": false,
+        "confidence": 0.0,
+        "instructions": null
+      },
+      "impact": {
+        "performance": -0.1,
+        "security_risk": 0.0,
+        "carbon_impact": 0.0,
+        "maintainability": -0.2,
+        "cost_impact": 0.0
+      },
+      "rule_name": "Unused Import",
+      "rule_description": "Import statement is not used in the module",
+      "references": [],
+      "tags": [],
+      "ai_generated": false,
+      "ai_confidence": null,
+      "created_at": "2025-06-07T21:39:08.635354+00:00"
+    },
+    {
+      "rule_id": "unused_import",
+      "category": "quality",
+      "severity": "info",
+      "message": "Import 'unused_module' is not used",
+      "file_path": "/Users/dhruv/code/ecoguard-demo/sample-code/simple/quality_issues.py",
+      "line": 9,
+      "column": 0,
+      "end_line": 9,
+      "end_column": 20,
+      "description": null,
+      "code_snippet": null,
+      "suggested_fix": {
+        "description": "Remove unused import 'unused_module'",
+        "replacement_code": "# Remove import line",
+        "can_auto_fix": false,
+        "confidence": 0.0,
+        "instructions": null
+      },
+      "impact": {
+        "performance": -0.1,
+        "security_risk": 0.0,
+        "carbon_impact": 0.0,
+        "maintainability": -0.2,
+        "cost_impact": 0.0
+      },
+      "rule_name": "Unused Import",
+      "rule_description": "Import statement is not used in the module",
+      "references": [],
+      "tags": [],
+      "ai_generated": false,
+      "ai_confidence": null,
+      "created_at": "2025-06-07T21:39:08.635357+00:00"
+    },
+    {
+      "rule_id": "too_many_params",
+      "category": "quality",
+      "severity": "info",
+      "message": "Function 'function_with_too_many_params' has 10 parameters (max: 5)",
+      "file_path": "/Users/dhruv/code/ecoguard-demo/sample-code/simple/quality_issues.py",
+      "line": 12,
+      "column": 0,
+      "end_line": 14,
+      "end_column": 48,
+      "description": null,
+      "code_snippet": null,
+      "suggested_fix": {
+        "description": "Consider using a data class or dictionary to group related parameters",
+        "replacement_code": "# Group related parameters into a data structure",
+        "can_auto_fix": false,
+        "confidence": 0.0,
+        "instructions": null
+      },
+      "impact": {
+        "performance": 0.0,
+        "security_risk": 0.0,
+        "carbon_impact": 0.0,
+        "maintainability": -0.5,
+        "cost_impact": 0.0
+      },
+      "rule_name": "Too Many Parameters",
+      "rule_description": "Function has too many parameters",
+      "references": [],
+      "tags": [],
+      "ai_generated": false,
+      "ai_confidence": null,
+      "created_at": "2025-06-07T21:39:08.635632+00:00"
+    }
+  ],
+  "metadata": {
+    "file_path": "/Users/dhruv/code/ecoguard-demo/sample-code/simple/quality_issues.py",
+    "file_size": 1500,
+    "line_count": 65,
+    "ast_research": {
+      "patterns": {
+        "function_def": [
+          "ASTNodeInfo(node_type='FunctionDef', line=12, column=0, parent_type='Module', children_count=3, attributes={'name': 'function_with_too_many_params', 'param_count': 10, 'body_length': 2}, context='module')",
+          "ASTNodeInfo(node_type='FunctionDef', line=17, column=0, parent_type='Module', children_count=3, attributes={'name': 'complex_function', 'param_count': 1, 'body_length': 2}, context='module')",
+          "ASTNodeInfo(node_type='FunctionDef', line=40, column=0, parent_type='Module', children_count=8, attributes={'name': 'function_with_unused_vars', 'param_count': 0, 'body_length': 7}, context='module')",
+          "ASTNodeInfo(node_type='FunctionDef', line=58, column=0, parent_type='Module', children_count=4, attributes={'name': 'main', 'param_count': 0, 'body_length': 3}, context='module')"
+        ],
+        "class_def": [],
+        "import": [
+          "ASTNodeInfo(node_type='Import', line=6, column=0, parent_type='Module', children_count=1, attributes={}, context='module')",
+          "ASTNodeInfo(node_type='Import', line=7, column=0, parent_type='Module', children_count=1, attributes={}, context='module')",
+          "ASTNodeInfo(node_type='Import', line=8, column=0, parent_type='Module', children_count=1, attributes={}, context='module')",
+          "ASTNodeInfo(node_type='Import', line=9, column=0, parent_type='Module', children_count=1, attributes={}, context='module')"
+        ],
+        "loop": [],
+        "comprehension": []
+      },
+      "complexity_metrics": {
+        "cyclomatic": 7,
+        "max_nesting": 5
+      },
+      "max_depth": 14,
+      "node_type_counts": {
+        "Module": 1,
+        "Expr": 9,
+        "Constant": 27,
+        "Import": 4,
+        "alias": 4,
+        "FunctionDef": 4,
+        "arguments": 4,
+        "arg": 11,
+        "Return": 9,
+        "BinOp": 9,
+        "Name": 30,
+        "Load": 25,
+        "Add": 9,
+        "If": 7,
+        "Compare": 7,
+        "Gt": 6,
+        "Assign": 6,
+        "Store": 6,
+        "List": 1,
+        "Call": 4,
+        "Eq": 1
+      }
+    }
+  }
+}

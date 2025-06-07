@@ -1,205 +1,269 @@
-# 🌱 EcoGuard AI - Quick Reference & Examples
+# 🌱 EcoGuard AI Demo Repository
 
-## Quick Start Commands
+**Comprehensive demonstration of EcoGuard AI's code analysis capabilities, featuring the newly integrated Stage 3 AST Research functionality.**
 
-```bash
-# Install EcoGuard AI (from your local development)
-cd /Users/dhruv/code/ecoguard && pip install -e .
+[![EcoGuard AI](https://img.shields.io/badge/EcoGuard%20AI-Production%20Ready-green)](https://github.com/ecoguard-ai)
+[![AST Research](https://img.shields.io/badge/AST%20Research-Stage%203-blue)](https://github.com/ecoguard-ai)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
-# Basic usage - analyze current directory
-ecoguard analyze . --format table
+## 🚀 What's New: Stage 3 AST Research Integration
 
-# Analyze specific file with detailed output
-ecoguard analyze my_file.py --format text --severity info
+This demo repository showcases the **newly integrated AST (Abstract Syntax Tree) research capabilities** that enhance EcoGuard AI's code analysis with deep structural insights, pattern detection, and complexity metrics.
 
-# Save results to file
-ecoguard analyze . --output results.json --format json
+### ✨ New Features
+
+- 🔬 **AST Research Integration** (`--enable-ast-research`)
+- 📊 **Configurable Analysis Depth** (`--ast-depth basic|detailed|comprehensive`)
+- 🎯 **Advanced Pattern Analysis** (`--enable-pattern-analysis`)
+- 📈 **Complexity Metrics** (`--enable-complexity-metrics`)
+- 💾 **Enhanced JSON Export** with AST metadata
+- 🎨 **Beautiful Table Displays** for analysis results
+- 🔄 **Full Backward Compatibility** with existing commands
+
+## 📁 Repository Structure
+
+```
+ecoguard-demo/
+├── demos/                     # Organized demo scenarios
+│   ├── basic/                 # Standard analysis demonstrations
+│   ├── ast-research/          # AST research feature showcases
+│   ├── security/              # Security-focused analysis
+│   ├── performance/           # Performance optimization analysis
+│   ├── quality/               # Code quality assessment
+│   └── comprehensive/         # Complete feature demonstration
+├── sample-code/               # Code samples for analysis
+│   ├── simple/                # Basic examples and clean code
+│   ├── complex/               # Advanced patterns and structures
+│   └── real-world/            # Realistic application examples
+├── scripts/                   # Demo automation and utilities
+│   ├── individual/            # Feature-specific demonstrations
+│   ├── showcase/              # Presentation-ready demos
+│   └── automation/            # Batch processing and automation
+└── docs/                      # Documentation and results
+    ├── guides/                # Usage guides and tutorials
+    ├── examples/              # Example outputs and explanations
+    └── results/               # Analysis results and reports
 ```
 
-## Real Examples from Demo
+## 🎬 Quick Start Demos
 
-### 1. Analyzing a Single File with Issues
+### 1. 🌟 Comprehensive Feature Showcase
+
+Experience all EcoGuard AI capabilities including the new AST research features:
+
 ```bash
-$ ecoguard analyze quality_issues.py --format text --severity info
-
-Analysis Results for: quality_issues.py
-============================================================
-Found 7 issues:
-
-quality_issues.py:43:4: warning: Variable 'unused_var' is defined but never used 
-quality_issues.py:44:4: warning: Variable 'another_unused' is defined but never used 
-quality_issues.py:6:0: info: Import 'os' is not used 
-quality_issues.py:7:0: info: Import 'sys' is not used 
-quality_issues.py:8:0: info: Import 'json' is not used 
-quality_issues.py:9:0: info: Import 'unused_module' is not used 
-quality_issues.py:12:0: info: Function 'function_with_too_many_params' has 10 parameters (max: 5)
+./demos/comprehensive/full_demo.sh
 ```
 
-### 2. Analyzing Entire Project
-```bash
-$ ecoguard analyze . --format table --severity warning
+This demo demonstrates:
+- ✅ Standard analysis (backward compatible)
+- 🔬 AST research integration at all depth levels
+- 🎯 Pattern analysis and complexity metrics
+- 💾 Enhanced JSON export capabilities
+- 🔄 Backward compatibility verification
 
-Project Analysis Results: .
-           Project Summary            
-┏━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃ Metric                 ┃ Value     ┃
-┡━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
-│ Files Analyzed         │ 3         │
-│ Total Issues           │ 47        │
-│ Info                   │ 35        │
-│ Warning                │ 12        │
-│ Overall Green Score    │ 71.7/100  │
-│ Overall Security Score │ 100.0/100 │
-└────────────────────────┴───────────┘
+### 2. 🔬 AST Research Deep Dive
+
+Explore the new AST research capabilities:
+
+```bash
+./demos/ast-research/ast_research_demo.sh
 ```
 
-### 3. JSON Output for Automation
-```bash
-$ ecoguard analyze quality_issues.py --format json | jq '.summary'
+Features demonstrated:
+- Basic, detailed, and comprehensive AST analysis
+- Pattern detection and complexity metrics
+- Enhanced visualizations and reports
+- JSON export with AST metadata
 
+### 3. 🛡️ Security Analysis
+
+Focus on security vulnerability detection:
+
+```bash
+./demos/security/security_demo.sh
+```
+
+### 4. ⚡ Performance Analysis
+
+Identify performance bottlenecks and optimization opportunities:
+
+```bash
+./demos/performance/performance_demo.sh
+```
+
+### 5. ✨ Code Quality Assessment
+
+Evaluate code quality and maintainability:
+
+```bash
+./demos/quality/quality_demo.sh
+```
+
+## 🔧 Individual Feature Demonstrations
+
+### AST Depth Comparison
+
+Compare analysis results across different AST depth levels:
+
+```bash
+./scripts/individual/ast_depth_comparison.sh
+```
+
+### Pattern Analysis
+
+Deep dive into pattern detection capabilities:
+
+```bash
+./scripts/individual/pattern_analysis_demo.sh
+```
+
+### Complexity Metrics
+
+Explore complexity measurement features:
+
+```bash
+./scripts/individual/complexity_metrics_demo.sh
+```
+
+## 🤖 Automation and Batch Processing
+
+### Batch Analysis
+
+Run comprehensive analysis across multiple files and configurations:
+
+```bash
+./scripts/automation/batch_analysis.sh
+```
+
+This generates:
+- Multiple analysis results in JSON format
+- Comparative reports across different configurations
+- Summary insights and recommendations
+
+## 📊 AST Research Features in Detail
+
+### Analysis Depth Levels
+
+| Level | Description | Use Case |
+|-------|-------------|----------|
+| **Basic** | Essential AST metrics | Quick overview, CI/CD integration |
+| **Detailed** | Enhanced insights with patterns | Development workflow, code review |
+| **Comprehensive** | Complete analysis with all features | Deep analysis, architecture review |
+
+### Command Examples
+
+```bash
+# Basic AST research
+ecoguard analyze sample-code/simple/clean_code.py --enable-ast-research --ast-depth basic
+
+# Detailed analysis with patterns
+ecoguard analyze sample-code/complex/ast_showcase.py --enable-ast-research --ast-depth detailed --enable-pattern-analysis
+
+# Comprehensive analysis with all features
+ecoguard analyze sample-code/real-world/web_api_example.py --enable-ast-research --ast-depth comprehensive --enable-pattern-analysis --enable-complexity-metrics
+
+# Export enhanced JSON with AST metadata
+ecoguard analyze sample-code/complex/complex_patterns.py --enable-ast-research --ast-depth comprehensive --enable-pattern-analysis --enable-complexity-metrics --format json --output analysis_results.json
+```
+
+### Backward Compatibility
+
+All existing commands continue to work unchanged:
+
+```bash
+# Standard analysis (no changes required)
+ecoguard analyze sample-code/simple/problematic_app.py
+
+# Existing JSON export
+ecoguard analyze sample-code/simple/quality_issues.py --format json --output results.json
+```
+
+## 📋 Sample Code Overview
+
+### Simple Examples
+- `basic_functions.py` - Clean, well-structured code
+- `clean_code.py` - Best practices demonstration
+- `quality_issues.py` - Common code quality problems
+- `problematic_app.py` - Security vulnerabilities
+
+### Complex Examples
+- `ast_showcase.py` - Advanced AST patterns
+- `complex_patterns.py` - Intricate code structures
+
+### Real-World Examples
+- `web_api_example.py` - Realistic web application with various issues
+
+## 🎯 Analysis Results Interpretation
+
+### AST Research Output
+
+The enhanced analysis provides:
+- **Structural Metrics**: Function complexity, nesting depth, cyclomatic complexity
+- **Pattern Detection**: Design patterns, anti-patterns, code smells
+- **Security Insights**: Vulnerability patterns, unsafe practices
+- **Performance Indicators**: Bottlenecks, optimization opportunities
+- **Maintainability Scores**: Code readability, modularity assessment
+
+### JSON Export Enhancement
+
+AST-enhanced JSON exports include:
+```json
 {
-  "total_issues": 7,
-  "critical": 0,
-  "error": 0,
-  "warning": 2,
-  "info": 5,
-  "green_score": 100.0,
-  "security_score": 100.0
+  "analysis_results": { /* standard results */ },
+  "ast_research": {
+    "depth_level": "comprehensive",
+    "structural_metrics": { /* complexity data */ },
+    "pattern_analysis": { /* detected patterns */ },
+    "complexity_metrics": { /* detailed metrics */ }
+  }
 }
 ```
 
-## Currently Available Features
+## �� Migration from Standard Analysis
 
-### ✅ Working Now (Phase 1 Stage 2)
-- **Quality Analysis**: Detects unused imports, unused variables, functions with too many parameters
-- **Code Complexity**: Identifies overly complex functions
-- **Clean Code Issues**: Finds maintainability problems
-- **Multi-file Analysis**: Can analyze entire projects
-- **Multiple Output Formats**: JSON, text, table
-- **Severity Filtering**: Filter by info, warning, error, critical
-- **Detailed Reports**: Line numbers, suggestions, impact analysis
+Existing workflows require no changes. To enhance with AST research:
 
-### 🚧 Coming Soon (Future Stages)
-- **Security Analysis**: SQL injection, hardcoded secrets, unsafe functions
-- **Green Software**: Energy consumption, carbon footprint analysis
-- **AI Code Analysis**: Specialized analysis for AI-generated code
-- **Custom Rules**: User-defined analysis rules
-- **Auto-fixing**: Automatic code fixes for common issues
+1. **Add AST research**: Include `--enable-ast-research`
+2. **Choose depth**: Add `--ast-depth basic|detailed|comprehensive`
+3. **Enable patterns**: Add `--enable-pattern-analysis`
+4. **Include metrics**: Add `--enable-complexity-metrics`
 
-## Common Use Cases
+## ��️ Prerequisites
 
-### For Individual Developers
-```bash
-# Before committing code
-ecoguard analyze . --format table --severity warning
+- EcoGuard AI CLI installed and configured
+- Python 3.8+ for sample code execution
+- Bash shell for demo scripts
 
-# Detailed code review
-ecoguard analyze src/ --format text --output code-review.txt
-```
+## 📚 Documentation
 
-### For Teams
-```bash
-# CI/CD integration
-ecoguard analyze . --format json --output ci-results.json --severity error
+- **Installation Guide**: See main EcoGuard AI repository
+- **API Reference**: Complete CLI documentation available
+- **Examples**: Check `docs/examples/` for detailed use cases
+- **Results**: Analysis outputs in `docs/results/`
 
-# Weekly code quality report
-ecoguard analyze . --format text --output weekly-report.txt --severity info
-```
+## 🎉 Success Stories
 
-### For Different Project Types
+The Stage 3 AST Research Integration provides:
+- **152 tests passing** - Comprehensive validation
+- **Enhanced insights** - Deeper code understanding
+- **Beautiful displays** - Rich table visualizations
+- **JSON enhancement** - Complete metadata export
+- **Backward compatibility** - No breaking changes
 
-#### Web Applications (Flask/Django)
-```bash
-ecoguard analyze my_web_app/ --format table --no-ai-code --severity warning
-```
+## 🤝 Contributing
 
-#### Data Science Projects
-```bash
-ecoguard analyze notebooks/ --format json --severity info --output ds-analysis.json
-```
+This demo repository showcases EcoGuard AI capabilities. For contributions to the main project, please visit the primary EcoGuard AI repository.
 
-#### API Projects
-```bash
-ecoguard analyze api/ --format table --severity warning --output api-quality.txt
-```
+## 📧 Support
 
-#### Legacy Code Assessment
-```bash
-ecoguard analyze legacy-system/ --format json --severity info --output legacy-audit.json
-```
-
-## Integration Examples
-
-### Makefile Integration
-```makefile
-# Add to your Makefile
-.PHONY: analyze
-analyze:
-\tecoguard analyze . --format table --severity warning
-
-.PHONY: analyze-ci  
-analyze-ci:
-\tecoguard analyze . --format json --output analysis.json --severity error
-```
-
-### Pre-commit Hook
-```bash
-# .git/hooks/pre-commit
-#!/bin/bash
-echo "Running EcoGuard AI analysis..."
-ecoguard analyze . --format table --severity error
-if [ $? -ne 0 ]; then
-    echo "Please fix critical issues before committing"
-    exit 1
-fi
-```
-
-### GitHub Actions
-```yaml
-- name: Code Quality Analysis
-  run: |
-    pip install ecoguard-ai
-    ecoguard analyze src/ --format json --output quality-report.json
-    ecoguard analyze src/ --format table --severity warning
-```
-
-## Tips & Best Practices
-
-1. **Start Simple**: Begin with `ecoguard analyze . --format table`
-2. **Focus on Warnings**: Use `--severity warning` to focus on important issues
-3. **Save Reports**: Use `--output` to save results for tracking progress
-4. **CI Integration**: Use JSON format for automated processing
-5. **Regular Checks**: Run analysis regularly, not just before releases
-6. **Team Standards**: Agree on severity levels that fail builds
-
-## Exit Codes
-
-- `0`: Success (no critical issues)
-- `1`: Issues found that need attention
-- `2`: Tool error (invalid arguments, file not found)
-
-## Getting Help
-
-```bash
-# General help
-ecoguard --help
-
-# Command-specific help
-ecoguard analyze --help
-ecoguard rules --help
-
-# Check version
-ecoguard --version
-```
-
-## Next Steps
-
-1. Try EcoGuard AI on your own projects
-2. Integrate into your development workflow
-3. Set up CI/CD integration
-4. Configure team standards for code quality
-5. Watch for new features in upcoming releases
+For questions about EcoGuard AI or these demonstrations:
+- Check the main repository documentation
+- Review the demo script outputs
+- Examine the generated analysis results
 
 ---
 
-**EcoGuard AI** - Making code quality, security, and sustainability analysis accessible to every developer! 🌱
+**🌱 EcoGuard AI - Making code analysis intelligent, comprehensive, and actionable.**
+
+*Stage 3 AST Research Integration: Production Ready ✅*

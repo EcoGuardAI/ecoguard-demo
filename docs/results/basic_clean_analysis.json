@@ -1,0 +1,88 @@
+{
+  "file_path": "/Users/dhruv/code/ecoguard-demo/sample-code/simple/clean_code.py",
+  "analysis_time": "2025-06-07T21:32:52.780601+00:00",
+  "summary": {
+    "total_issues": 2,
+    "critical": 0,
+    "error": 0,
+    "warning": 0,
+    "info": 2,
+    "green_score": 90.0,
+    "security_score": 100.0
+  },
+  "issues": [
+    {
+      "rule_id": "use_generator",
+      "category": "green",
+      "severity": "info",
+      "message": "Consider using generator expression instead of list comprehension for single use",
+      "file_path": "/Users/dhruv/code/ecoguard-demo/sample-code/simple/clean_code.py",
+      "line": 62,
+      "column": 15,
+      "end_line": 65,
+      "end_column": 9,
+      "description": null,
+      "code_snippet": null,
+      "suggested_fix": {
+        "description": "Replace [] with () to create generator",
+        "replacement_code": "# Change [expr for item in iterable] to (expr for item in iterable)",
+        "can_auto_fix": false,
+        "confidence": 0.0,
+        "instructions": null
+      },
+      "impact": {
+        "performance": -0.1,
+        "security_risk": 0.0,
+        "carbon_impact": 2.0,
+        "maintainability": 0.0,
+        "cost_impact": 0.0
+      },
+      "rule_name": "Use Generator Expression",
+      "rule_description": "Consider using generator for memory efficiency",
+      "references": [],
+      "tags": [],
+      "ai_generated": false,
+      "ai_confidence": null,
+      "created_at": "2025-06-07T21:32:52.777852+00:00"
+    },
+    {
+      "rule_id": "file_handling_efficiency",
+      "category": "green",
+      "severity": "info",
+      "message": "Use 'with open()' for automatic file closing",
+      "file_path": "/Users/dhruv/code/ecoguard-demo/sample-code/simple/clean_code.py",
+      "line": 78,
+      "column": 22,
+      "end_line": 78,
+      "end_column": 43,
+      "description": null,
+      "code_snippet": null,
+      "suggested_fix": {
+        "description": "Use context manager (with statement) for file handling",
+        "replacement_code": "# with open(filename) as f:",
+        "can_auto_fix": false,
+        "confidence": 0.0,
+        "instructions": null
+      },
+      "impact": {
+        "performance": -0.05,
+        "security_risk": 0.0,
+        "carbon_impact": 1.0,
+        "maintainability": 0.0,
+        "cost_impact": 0.0
+      },
+      "rule_name": "File Handling Efficiency",
+      "rule_description": "File handling could be more efficient",
+      "references": [],
+      "tags": [],
+      "ai_generated": false,
+      "ai_confidence": null,
+      "created_at": "2025-06-07T21:32:52.778488+00:00"
+    }
+  ],
+  "metadata": {
+    "file_path": "/Users/dhruv/code/ecoguard-demo/sample-code/simple/clean_code.py",
+    "file_size": 3456,
+    "line_count": 129
+  }
+}
